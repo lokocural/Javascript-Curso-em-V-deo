@@ -12,4 +12,5 @@ Passo 1
 Passo 2
 Passo 3
 Estrutura de Repeticao com teste lógico no inicio
+While = Enquanto
 */
