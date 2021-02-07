@@ -10,11 +10,17 @@ function contar() {
         let i = Number(ini.value)
         let f = Number(fim.value)
         let p = Number(passo.value)
-
-        for (let c = i; c <= f; c += p) {
-            res.innerHTML += `${c}\u{1F449}`
-
+        if (i < f) {
+            //Contagem crescente
+            for (let c = i; c <= f; c += p) {
+                res.innerHTML += `${c}\u{1F449}`
+            }
+        } else {
+            //Contagem regressiva
+            for (let c = i; c >= f; c -= p) {
+                res.innerHTML += `${c} \u{1F449}`
+            }
         }
-        res.innerHTML += ``
+        res.innerHTML += `\u{1F3C1}`
     }
 }
